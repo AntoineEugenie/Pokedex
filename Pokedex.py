@@ -9,9 +9,15 @@ import google.generativeai as genai
 import json
 
 
+api_key = st.secrets["API_KEY"]
+genai.configure(api_key=api_key)
+
+
+
+
 st.set_page_config(page_title="Pokédex", layout="wide")
 
-genai.configure(api_key="AIzaSyBowUaTFOxPKM_j0DvXUxz75m-TnoEOrDA")
+
 
 
 model = genai.GenerativeModel("gemini-2.0-flash") 
