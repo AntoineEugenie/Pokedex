@@ -1,5 +1,3 @@
-# utils.py
-
 type_colors = {
     'fire': '#F08030', 'water': '#6890F0', 'grass': '#78C850',
     'electric': '#F8D030', 'ice': '#98D8D8', 'fighting': '#C03028',

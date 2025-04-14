@@ -104,7 +104,6 @@ if selected_name:
             resistances = selected_pokemon[against_cols].astype(float)
             types = [col.replace("against_", "") for col in against_cols]
 
-            # Création de la heatmap Plotly
             fig = go.Figure(data=go.Heatmap(
                 z=[resistances.values],
                 x=types,
@@ -130,9 +129,10 @@ if selected_name:
 
 
 
-# Sidebar - Filtres
+# Sidebar 
 st.sidebar.header("🔎 Filtres")
 name_filter = st.sidebar.text_input("Nom contient...")
+
 type_filter = st.sidebar.multiselect("Type", sorted(set(df['type1']) | set(df['type2'])))
 
 
