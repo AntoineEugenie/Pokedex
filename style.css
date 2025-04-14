@@ -1,0 +1,78 @@
+/* style.css – Thème Pokédex moderne et sobre */
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #ef5350;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.stApp {
+    background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+}
+
+div[data-testid="stSidebar"] {
+    background-color: #ef5350;
+    color: white;
+}
+
+div[data-testid="stSidebar"] h1,
+div[data-testid="stSidebar"] h2,
+div[data-testid="stSidebar"] h3 {
+    color: white;
+}
+
+.stButton>button {
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.stButton>button:hover {
+    background-color: #c62828;
+}
+
+.stTextInput,
+.stSelectbox,
+.stMultiselect {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+    border: 1px solid #ced4da !important;
+    color: black !important;
+}
+
+/* Cartes Pokémon */
+.card {
+    background: linear-gradient(135deg, #ef5350, #f06292);
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.card a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 4px 0;
+    font-size: 14px;
+}
